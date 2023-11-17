@@ -4,7 +4,7 @@
 
 import pygame
 import math
-import imageio
+# import imageio
 
 # pygame 초기화
 pygame.init()
@@ -192,17 +192,17 @@ def main():
         pygame.display.update()
 
         # 스크린샷
-        pygame.image.save(WIN, f"frame_{frame_count}.jpg")
-        frame_count += 1
+        #pygame.image.save(WIN, f"frame_{frame_count}.jpg")
+        #frame_count += 1
     
     pygame.quit()
 
     # gif로 결과 저장
-    images = []
-    for i in range(frame_count):
-        filename = os.path.join('Orbit_pygame', f'frame_{i}.jpg')
-        images.append(imageio.imread(filename))
+    #images = []
+    #for i in range(frame_count):
+    #    filename = os.path.join('Orbit_pygame', f'frame_{i}.jpg')
+    #    images.append(imageio.imread(filename))
 
-    imageio.mimsave('animation.gif', images, fps=FPS)
+    #imageio.mimsave('animation.gif', images, fps=FPS)
 
 main()
